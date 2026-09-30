@@ -4,6 +4,7 @@
 ocpl-dynamic-files
 
 # Ignore local configuration
+/.env
 /config/**/*.local.php
 /lib/settings.inc.php
 /mobile/lib/settings.inc.php
@@ -22,3 +23,4 @@ ocpl-dynamic-files
 # PHP CS-Fixer files
 .php-cs-fixer.php
 .php-cs-fixer.cache
+ocpldb.sql
