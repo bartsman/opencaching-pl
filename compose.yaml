@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "${APP_PORT:-8080}:80"
+      - "${APP_PORT:-80}:80"
     environment:
       DB_HOST: db
       DB_NAME: ${DB_NAME:?Set DB_NAME in .env}
