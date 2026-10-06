@@ -1,13 +1,14 @@
 # Uruchomienie lokalne w Dockerze
 
-Stack zawiera aplikację w Apache/PHP 7.4 oraz osobny kontener MariaDB 11.8.9.
+Stack zawiera aplikację w Apache/PHP 8.3, phpMyAdmin 5.2.3 oraz osobny
+kontener MariaDB 11.8.9.
 Pusta baza o nazwie ustawionej w `DB_NAME` jest tworzona przy pierwszym starcie;
 tabele i dane trzeba zaimportować osobno.
 
 1. Skopiuj `.env.example` do `.env`.
 2. Ustaw własne, niepuste hasła w `DB_PASSWORD` i `DB_ROOT_PASSWORD`.
 3. Uruchom `docker compose up --build`.
-4. Otwórz aplikację pod <http://localhost:8080> (lub portem ustawionym przez `APP_PORT`).
+4. Otwórz aplikację pod <http://opencaching.localhost> (lub portem ustawionym przez `APP_PORT`).
 5. Otwórz phpMyAdmin pod <http://localhost:8081> (lub portem z `PMA_PORT`);
    zaloguj się nazwą i hasłem z `DB_USER` i `DB_PASSWORD`.
 

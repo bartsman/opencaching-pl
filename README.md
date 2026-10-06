@@ -13,7 +13,7 @@ Z katalogu projektu uruchom:
 docker compose up -d --build
 ```
 
-Aplikacja będzie dostępna pod adresem <http://localhost:8080>, a phpMyAdmin
+Aplikacja będzie dostępna pod adresem <http://opencaching.localhost>, a phpMyAdmin
 pod <http://localhost:8081>. W phpMyAdminie użyj `DB_USER` i `DB_PASSWORD`
 z pliku `.env`.
 

@@ -4,6 +4,11 @@
 // developer's ignored lib/settings.inc.php on the host.
 require __DIR__ . '/settings-example.inc.php';
 
+$config['meritBadges'] = true;
+$absolute_server_URI = '//opencaching.localhost/';
+$mp3url = '//opencaching.localhost/mp3';
+$config['cookie']['domain'] = 'opencaching.localhost';
+
 $dbserver = getenv('DB_HOST') ?: 'db';
 $dbname = getenv('DB_NAME') ?: 'opencaching';
 $dbusername = getenv('DB_USER') ?: 'opencaching';
